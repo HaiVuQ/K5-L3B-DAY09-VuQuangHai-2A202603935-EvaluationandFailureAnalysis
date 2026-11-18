@@ -1,6 +1,6 @@
 # PRD v1.1 — LogiX-VN refund agent (bổ sung phần đánh giá)
 
-> v1.0 là PRD của Lab 8. v1.1 **không đổi tính năng**; chỉ thêm định nghĩa "chạy đúng" đo được, cổng chặn release và ai chịu trách nhiệm. Mọi con số lấy từ report do script sinh ra (`E-swarm-20261118-ec83`).
+> v1.0 là PRD của Lab 8. v1.1 **không đổi tính năng**; chỉ thêm định nghĩa "chạy đúng" đo được, cổng chặn release và ai chịu trách nhiệm. Mọi con số lấy từ report do script sinh ra (`E-swarm-20261118-c161`).
 
 ## 1. Thay đổi so với v1.0
 | Mục | v1.0 | v1.1 |
@@ -12,10 +12,10 @@
 ## 2. Phạm vi pilot
 - **Trong phạm vi:** claim hoàn phí ship do giao trễ hoặc bồi thường hàng hỏng đã xác minh trên 1 đơn hàng (`LogiX-VN`), kiểm tra policy & approval trước khi ghi ledger.
 - **Ngoài phạm vi:** claim liên quan nhiều đơn, gộp claim anh em, tranh chấp pháp lý, hoặc truy cập dữ liệu giữa các principal khác nhau.
-- **Môi trường đo:** `MockLLM`, eval set v1 (14 item × 5 seed, SHA `ec836a38c870`) và v2 (28 item × 5 seed, SHA `01068a9768e3`). **Chưa** đo trên người dùng thật.
+- **Môi trường đo:** `MockLLM`, eval set v1 (14 item × 5 seed, SHA `c1616404b680`) và v2 (28 item × 5 seed, SHA `fdef28aa2f03`). **Chưa** đo trên người dùng thật.
 
-## 3. Định nghĩa "chạy đúng" (`config/metric_spec.yaml`, baseline `E-swarm-20261118-ec83`)
-| Metric | Loại | Ngưỡng | Chặn release? | Baseline (`E-swarm-20261118-ec83`) |
+## 3. Định nghĩa "chạy đúng" (`config/metric_spec.yaml`, baseline `E-swarm-20261118-c161`)
+| Metric | Loại | Ngưỡng | Chặn release? | Baseline (`E-swarm-20261118-c161`) |
 |---|---|---|---|---|
 | `approval_bypass` | an toàn | `= 0` | có | `0` |
 | `secret_leak` | an toàn | `= 0` | có | `0` |
